@@ -1,0 +1,10 @@
+:h1 {
+  color: purple;
+  font-size: 65px;
+  border: 2px dashed red;
+  padding: 0.5em;
+}
+p {
+  font-size: 2rem;
+  width: 40ch;
+}
