@@ -62,3 +62,19 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.burner h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--clr-primary-12);
+  /*animation*/
+}
+.burner h1 {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+}
+.burner-btn {
+  padding: 1rem 1.75rem;
+  outline: 10rem solid(#ffffff);
+  outline-offset: 10rem;
+}
