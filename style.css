@@ -1,10 +1,64 @@
-:h1 {
-  color: purple;
-  font-size: 65px;
-  border: 2px dashed red;
-  padding: 0.5em;
+:root {
+  /*primary colors*/
+  --clr-primary-1: hsl(184, 91%, 17%);
+  --clr-primary-2: hsl(185, 84%, 25%);
+  --clr-primary-3: hsl(186, 81%, 29%);
+  --clr-primary-4: hsl(184, 77%, 34%);
+  /*secondary colors*/
+  --clr-primary-5: hsl(185, 62%, 45%);
+  /*lighter shades of primary colors*/
+  --clr-primary-6: hsl(185, 57%, 50%);
+  --clr-primary-7: hsl(184, 65%, 59%);
+  --clr-primary-8: hsl(184, 80%, 74%);
+  --clr-primary-9: hsl(185, 94%, 87%);
+  --clr-primary-10: hsl(186, 100%, 94%);
+  /*darkest grey used for heading*/
+  --clr-primary-11: hsl(210, 40%, 38%);
+  --clr-primary-12: hsl(211, 39%, 27%);
+  --clr-primary-13: hsl(209, 34%, 30%);
+  --clr-primary-14: hsl(209, 38%, 39%);
+  /*grey used for paragraph*/
+  --clr-primary-15: hsl(210, 22%, 49%);
+  --clr-primary-16: hsl(209, 23%, 60%);
+  --clr-primary-17: hsl(211, 27%, 70%);
+  --clr-primary-18: hsl(210, 31%, 80%);
+  --clr-primary-19: hsl(212, 33%, 89%);
+  --clr-primary-20: hsl(220, 36%, 96%);
+  --clr-primary-21: hsl(209, 21%, 50%);
+  --clr-white: #ffffff;
+  --ff-primary: "verdana";
+  --ff-clr-black: #000000;
 }
-p {
+body {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-family: verdana;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.nav-bar {
+  font-size: 50px;
+}
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/pexels-anna-pou-8330390.jpg) center/cover no-repeat fixed;
+  position: relative;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
   font-size: 2rem;
-  width: 40ch;
+}
+.burner {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
