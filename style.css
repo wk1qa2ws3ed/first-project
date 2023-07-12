@@ -41,6 +41,7 @@ a {
   text-decoration: none;
 }
 .nav-bar {
+  color: aqua;
   font-size: 50px;
 }
 .header {
@@ -130,6 +131,53 @@ h2 {
   }
   body {
     font-size: i rem;
-    line-height: 1;
+  }
+}
+.transform {
+  padding: 25px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  color: red;
+  transform: rotatey(50deg);
+  transform: rotate(45deg) scale(0.9rem);
+  transform: translate(100%);
+  transform: translatey(-100%);
+  transform: skewy(30deg);
+}
+.transform h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.parent {
+  height: 400px;
+  width: 400px;
+  background-color: blue;
+}
+.child {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  animation: left-to-right 2s ease-in-out;
+}
+.parent:hover .child {
+  transform: translate(100%);
+  background-color: white;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(100%);
+  }
+  60% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
