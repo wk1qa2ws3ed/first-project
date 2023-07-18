@@ -1,11 +1,11 @@
 :root {
   /*primary colors*/
-  --clr-primary-1: hsl(184, 91%, 17%);
-  --clr-primary-2: hsl(185, 84%, 25%);
-  --clr-primary-3: hsl(186, 81%, 29%);
-  --clr-primary-4: hsl(184, 77%, 34%);
+  --clr-primary: #678e3e;
+  --clr-primary-light: #beed8c;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
   /*secondary colors*/
-  --clr-primary-5: hsl(185, 62%, 45%);
+  --clr-grey-10: #f1f5f8;
   /*lighter shades of primary colors*/
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -38,7 +38,7 @@
 body {
   font-family: Verdana;
   font-size: 0.875rem;
-  color: hsl(184, 91%, 17%);
+  color: --var(grey-1);
   line-height: 1.5;
 }
 a {
@@ -58,13 +58,30 @@ h4 {
 }
 h1 {
   font-size: 4rem;
+  line-height: 1;
 }
 h2 {
   font-size: 2.5rem;
+  line-height: 1;
 }
 h3 {
   font-size: 2rem;
+  line-height: 1;
 }
 h4 {
   font-size: 1rem;
+  line-height: 1;
+}
+.btn {
+  text-transform: uppercase;
+  color: white;
+  background-color: #678e3e;
+  padding: 0.35rem 0.75rem;
+  font-weight: 700;
+  font-size: 0.87rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: --ff-primary;
+  color: var(--primary-1);
 }
